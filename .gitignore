@@ -1,0 +1,67 @@
+# 依赖文件
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 编译输出
+dist/
+unpackage/
+build/
+
+# 微信小程序编译文件
+unpackage/dist/dev/mp-weixin
+unpackage/dist/build/mp-weixin
+unpackage/dist/dev/h5
+unpackage/dist/build/h5
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 日志
+logs
+*.log
+
+# 临时文件
+.temp
+.tmp
+.cache
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# Serena 相关
+.serena/
+.claude/
+
+# 包管理器锁文件（根据使用情况选择）
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# 编译后的类型文件
+*.tsbuildinfo
+
+# 测试
+coverage/
+.nyc_output/
+
+# HBuilderX
+.hbuilderx/

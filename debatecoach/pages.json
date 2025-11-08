@@ -1,0 +1,93 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "辩论陪练",
+        "navigationBarBackgroundColor": "#007AFF",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#F8F9FA"
+      }
+    },
+    {
+      "path": "pages/debate-room/debate-room",
+      "style": {
+        "navigationBarTitleText": "对局房间",
+        "navigationBarBackgroundColor": "#007AFF",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/debate-review/debate-review",
+      "style": {
+        "navigationBarTitleText": "赛后复盘",
+        "navigationBarBackgroundColor": "#007AFF",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/quick-debate/quick-debate",
+      "style": {
+        "navigationBarTitleText": "快速开辩",
+        "navigationBarBackgroundColor": "#FF6B35",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/profile/profile",
+      "style": {
+        "navigationBarTitleText": "个人中心",
+        "navigationBarBackgroundColor": "#007AFF",
+        "navigationBarTextStyle": "white"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "DebateCoach",
+    "navigationBarBackgroundColor": "#007AFF",
+    "backgroundColor": "#F8F9FA",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#007AFF",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/icons/home.png",
+        "selectedIconPath": "static/icons/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/quick-debate/quick-debate",
+        "iconPath": "static/icons/debate.png",
+        "selectedIconPath": "static/icons/debate-active.png",
+        "text": "开辩"
+      },
+      {
+        "pagePath": "pages/debate-review/debate-review",
+        "iconPath": "static/icons/review.png",
+        "selectedIconPath": "static/icons/review-active.png",
+        "text": "复盘"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "iconPath": "static/icons/profile.png",
+        "selectedIconPath": "static/icons/profile-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于提供更好的服务体验"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseAddress"
+  ]
+}

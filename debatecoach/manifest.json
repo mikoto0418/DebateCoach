@@ -1,0 +1,64 @@
+{
+  "name": "DebateCoach",
+  "appid": "__UNI__DC2024",
+  "description": "AI 驱动的辩论陪练小程序",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "app-plus": {
+    "usingComponents": true,
+    "nvueStyleCompiler": "uni-app",
+    "compilerVersion": 3,
+    "splashscreen": {
+      "alwaysShowBeforeRender": true,
+      "waiting": true,
+      "autoclose": true,
+      "delay": 0
+    },
+    "modules": {
+      "OAuth": {},
+      "Payment": {},
+      "Push": {}
+    },
+    "distribute": {
+      "android": {
+        "permissions": [
+          "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+          "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>"
+        ]
+      },
+      "ios": {
+        "privacyDescription": {
+          "NSCameraUsageDescription": "用于辩论过程中拍照记录",
+          "NSMicrophoneUsageDescription": "用于语音辩论功能"
+        }
+      }
+    }
+  },
+  "mp-weixin": {
+    "appid": "",
+    "setting": {
+      "urlCheck": false,
+      "es6": true,
+      "enhance": true,
+      "postcss": true,
+      "minified": true
+    },
+    "usingComponents": true,
+    "permission": {
+      "scope.userLocation": {
+        "desc": "你的位置信息将用于提供更好的服务体验"
+      }
+    },
+    "requiredPrivateInfos": [
+      "getLocation",
+      "chooseAddress"
+    ]
+  },
+  "uniStatistics": {
+    "enable": false
+  },
+  "vueVersion": "3"
+}

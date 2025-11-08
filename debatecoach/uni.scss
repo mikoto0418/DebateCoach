@@ -1,0 +1,87 @@
+/* uni.scss - 全局样式变量和混入 */
+
+/* ===== 颜色变量 ===== */
+$primary-color: #007AFF;
+$accent-color: #FF6B35;
+$success-color: #4CD964;
+$warning-color: #F0AD4E;
+$error-color: #DD524D;
+
+$text-color-primary: #1A1A1A;
+$text-color-secondary: #666666;
+$text-color-muted: #999999;
+
+$bg-color: #F8F9FA;
+$bg-color-white: #FFFFFF;
+$bg-color-light: #F2F3F5;
+
+$border-color: #E5E5E5;
+$border-color-light: #F0F0F0;
+
+/* ===== 字体大小 ===== */
+$font-size-xs: 20rpx;   // 辅助文字
+$font-size-sm: 24rpx;   // 小号文字
+$font-size-base: 28rpx; // 正文
+$font-size-lg: 32rpx;   // 较大文字
+$font-size-xl: 36rpx;   // 标题
+$font-size-xxl: 44rpx;  // 大标题
+
+/* ===== 间距 ===== */
+$spacing-xs: 10rpx;
+$spacing-sm: 20rpx;
+$spacing-base: 30rpx;
+$spacing-lg: 40rpx;
+$spacing-xl: 60rpx;
+
+/* ===== 圆角 ===== */
+$border-radius-sm: 8rpx;
+$border-radius-base: 12rpx;
+$border-radius-lg: 16rpx;
+
+/* ===== 阴影 ===== */
+$box-shadow-light: 0 2rpx 8rpx rgba(0, 0, 0, 0.04);
+$box-shadow-base: 0 4rpx 12rpx rgba(0, 0, 0, 0.08);
+$box-shadow-dark: 0 8rpx 24rpx rgba(0, 0, 0, 0.12);
+
+/* ===== 混入 ===== */
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin text-ellipsis-multiple($lines: 2) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ===== 动画 ===== */
+@mixin transition-base {
+  transition: all 0.3s ease;
+}
+
+/* ===== 安全区域适配 ===== */
+.safe-area-inset-top {
+  padding-top: constant(safe-area-inset-top);
+  padding-top: env(safe-area-inset-top);
+}
+
+.safe-area-inset-bottom {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
