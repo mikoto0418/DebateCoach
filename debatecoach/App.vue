@@ -1,21 +1,54 @@
 <script>
-import { createSSRApp } from 'vue'
-import { createPinia } from 'pinia'
-import App from './App.vue'
-
-export function createApp() {
-  const app = createSSRApp(App)
-  const pinia = createPinia()
+export default {
+  name: 'App',
   
-  app.use(pinia)
+  onLaunch() {
+    console.log('DebateCoach 启动')
+    this.checkUpdate()
+  },
   
-  // 全局错误处理
-  app.config.errorHandler = (err, vm, info) => {
-    console.error('全局错误:', err, info)
-  }
+  onShow() {
+    console.log('App Show')
+  },
   
-  return {
-    app
+  onHide() {
+    console.log('App Hide')
+  },
+  
+  onError(err) {
+    console.error('全局错误:', err)
+  },
+  
+  methods: {
+    // 检查小程序更新
+    checkUpdate() {
+      // #ifdef MP-WEIXIN
+      const updateManager = uni.getUpdateManager()
+      
+      updateManager.onCheckForUpdate((res) => {
+        console.log('检查更新结果:', res.hasUpdate)
+      })
+      
+      updateManager.onUpdateReady(() => {
+        uni.showModal({
+          title: '更新提示',
+          content: '新版本已经准备好，是否重启应用？',
+          success: (res) => {
+            if (res.confirm) {
+              updateManager.applyUpdate()
+            }
+          }
+        })
+      })
+      
+      updateManager.onUpdateFailed(() => {
+        uni.showToast({
+          title: '更新失败',
+          icon: 'none'
+        })
+      })
+      // #endif
+    }
   }
 }
 </script>

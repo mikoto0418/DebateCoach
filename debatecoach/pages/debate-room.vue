@@ -21,17 +21,14 @@ export default {
   background-color: #F8F9FA;
   padding: 40rpx 30rpx;
 }
-
 .header {
   margin-bottom: 40rpx;
 }
-
 .title {
   font-size: 48rpx;
   font-weight: 700;
   color: #1A1A1A;
 }
-
 .content {
   background-color: #FFFFFF;
   border-radius: 20rpx;

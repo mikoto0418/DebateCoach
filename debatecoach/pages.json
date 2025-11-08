@@ -1,7 +1,7 @@
 {
   "pages": [
     {
-      "path": "pages/index/index",
+      "path": "pages/index",
       "style": {
         "navigationBarTitleText": "辩论陪练",
         "navigationBarBackgroundColor": "#007AFF",
@@ -10,7 +10,7 @@
       }
     },
     {
-      "path": "pages/debate-room/debate-room",
+      "path": "pages/debate-room",
       "style": {
         "navigationBarTitleText": "对局房间",
         "navigationBarBackgroundColor": "#007AFF",
@@ -18,15 +18,15 @@
       }
     },
     {
-      "path": "pages/debate-review/debate-review",
+      "path": "pages/debate-history",
       "style": {
-        "navigationBarTitleText": "赛后复盘",
+        "navigationBarTitleText": "历史对局",
         "navigationBarBackgroundColor": "#007AFF",
         "navigationBarTextStyle": "white"
       }
     },
     {
-      "path": "pages/quick-debate/quick-debate",
+      "path": "pages/quick-debate",
       "style": {
         "navigationBarTitleText": "快速开辩",
         "navigationBarBackgroundColor": "#FF6B35",
@@ -34,7 +34,7 @@
       }
     },
     {
-      "path": "pages/profile/profile",
+      "path": "pages/profile",
       "style": {
         "navigationBarTitleText": "个人中心",
         "navigationBarBackgroundColor": "#007AFF",
@@ -56,25 +56,25 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/index",
         "iconPath": "static/icons/home.png",
         "selectedIconPath": "static/icons/home-active.png",
         "text": "首页"
       },
       {
-        "pagePath": "pages/quick-debate/quick-debate",
+        "pagePath": "pages/quick-debate",
         "iconPath": "static/icons/debate.png",
         "selectedIconPath": "static/icons/debate-active.png",
         "text": "开辩"
       },
       {
-        "pagePath": "pages/debate-review/debate-review",
+        "pagePath": "pages/debate-history",
         "iconPath": "static/icons/review.png",
         "selectedIconPath": "static/icons/review-active.png",
         "text": "复盘"
       },
       {
-        "pagePath": "pages/profile/profile",
+        "pagePath": "pages/profile",
         "iconPath": "static/icons/profile.png",
         "selectedIconPath": "static/icons/profile-active.png",
         "text": "我的"
