@@ -54,9 +54,6 @@ export default {
 </script>
 
 <style>
-/* 引入全局样式 */
-@import url('./uni.scss');
-
 /* 全局样式重置 */
 * {
   box-sizing: border-box;
